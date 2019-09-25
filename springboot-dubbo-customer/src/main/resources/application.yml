@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+    
+
+---
+#开发环境
+
+#服务器相关配置
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+    
+#dubbo配置    
+dubbo:
+  registry:
+    address: zookeeper://localhost:2181
